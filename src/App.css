@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  background: none;      /* Remove background color */
+  border: none;          /* Remove border */
+  padding: 0;            /* Remove default padding */
+  margin: 0;             /* Remove default margin */
+  font-family: inherit;  /* Inherit font from parent */
+  font-size: inherit;    /* Inherit font size from parent */
+  color: inherit;        /* Inherit text color */
+  text-align: inherit;   /* Inherit text alignment */
+  cursor: pointer;       /* Ensure button has pointer cursor */
+  outline: none;         /* Remove the default focus outline */
+  user-select: none;
+}
+
+::selection {
+  background: none;      /* Remove background color */
+}
+

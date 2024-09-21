@@ -1,0 +1,19 @@
+/* AboutPage.css */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .emoji-link {
+    font-size: var(--Emoji-Font-Size); /* Increase the size of the emojis */
+    margin: 0 20px;  /* Add spacing between the emojis */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .emoji-link:hover {
+    opacity: 0.8; /* Add hover effect */
+  }
+  

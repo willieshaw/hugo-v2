@@ -1,0 +1,51 @@
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for small screens */
+    gap: 1px;
+    max-width: 100%; /* Ensure full width on smaller screens */
+    justify-content: center; /* Center the grid horizontally */
+}
+
+/* Medium screen: tablet or small desktops */
+@media (min-width: 768px) {
+    .index-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for medium screens */
+        gap: 4px;
+    }
+}
+
+/* Large screens: desktops */
+@media (min-width: 1024px) {
+    .index-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Dynamic columns, each at least 200px wide */
+        gap: 20px;
+        justify-content: center; /* Ensure the grid stays centered */
+    }
+}
+
+.index-view-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    align-items: center; /* Optional: Center the grid vertically in the container */
+}
+
+.index-image {
+    width: 33vw; /* Default for small screens */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Medium screen: tablet or small desktops */
+@media (min-width: 768px) {
+    .index-image {
+        width: 24vw;
+    }
+}
+
+/* Large screens: desktops */
+@media (min-width: 1024px) {
+    .index-image {
+        width: 200px; /* Ensure the image width is fixed for large screens */
+    }
+}

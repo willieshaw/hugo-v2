@@ -1,0 +1,85 @@
+/* NavBar.css */
+.navbar-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-tag-image {
+    width: 30px;
+    height: auto;
+    vertical-align: middle; /* Align image vertically with text */
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    font-size: var(--Emoji-Font-Size);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Filter section (equation + X) */
+.filter-section {
+    display: flex;
+    align-items: center;
+}
+
+.clear-filters {
+    margin-left: 10px;
+    font-size: var(--Emoji-Font-Size);
+    cursor: pointer;
+}
+
+.clear-filters:hover {
+    opacity: var(--Hover-Opacity);
+}
+
+#about-nav:hover {
+    opacity: var(--Hover-Opacity);
+}
+
+#filter-nav:hover {
+    opacity: var(--Hover-Opacity);
+}
+
+#index-nav:hover {
+    opacity: var(--Hover-Opacity);
+}
+
+.filter-tags:hover {
+    opacity: var(--Hover-Opacity);
+}
+
+.nav-tag-image {
+    min-width: 100px;
+    max-height: 120px;
+    object-fit: contain; 
+  }
+
+
+  .no-images-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .no-images-found {
+    font-size: var(--Emoji-Font-Size); /* Increase the size of the emojis */
+    margin: 0 20px;  /* Add spacing between the emojis */
+    text-decoration: none; /* Remove underline from links */
+    user-select: none;
+  }
+
+  

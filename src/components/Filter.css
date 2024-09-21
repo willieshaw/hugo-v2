@@ -1,0 +1,87 @@
+/* SearchPage.css */
+.filter-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;  /* Background color for the search page */
+  z-index: 2000;  /* Make sure it covers everything including the navbar */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.close-button {
+  font-size: var(--Emoji-Font-Size);
+  position: absolute;
+  top: 20px;
+  /* right: 20px; */
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.close-button:hover {
+  opacity: var(--Hover-Opacity);
+}
+
+.tag-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  box-sizing: border-box;
+}
+
+.tag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 90%;
+  /* flex-grow: 1; */
+  overflow-y: auto;  /* Allow scrolling if there are too many tags */
+  margin-bottom: 10px;
+}
+
+.tag-item {
+  font-size: var(--Emoji-Font-Size);
+  cursor: pointer;
+  /* padding: 10px; */
+  border-radius: 8px;
+  border: 2px solid transparent;
+}
+
+.tag-item:hover {
+opacity: 0.5;
+}
+
+.tag-item img {
+  /* width: 36px;
+  height: 36px; */
+}
+
+.tag-item.selected {
+  /* border-color: #007bff; */
+  opacity: 0.3;
+}
+
+.confirm-button {
+  font-size: var(--Emoji-Font-Size);
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.confirm-button:hover{
+  opacity: var(--Hover-Opacity);
+}
